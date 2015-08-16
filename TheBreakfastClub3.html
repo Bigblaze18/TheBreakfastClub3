@@ -1,0 +1,150 @@
+<html>
+<body>
+	<! Main header The breakfast Club Registration>
+    <h1 align="center">The BreakFast Club Registration</h1>
+    <hr>
+
+	<! Form breakfast club registration for page grouping>
+    <form name="breakfast_club_registration" method="post" action="html_form_send.php">
+        
+        <! Fieldset to group setup your account>
+        <fieldset class="fieldset_setup_your_account">
+            
+            <! Legend labeling the fieldset>
+            <legend class="legend_setup_your_account" align="center">Setup your Account</legend>
+
+            <! Table labeling the table>
+            <table class="table_setup_your_account" align="center">
+                
+                <! Row 1 within setup your account >
+                <tr class="setup_your_account_username">
+                    <td valign="top"><label for="user_name">Username :</label></td>
+
+                    <td valign="top"><input type="text" placeholder="Username" name="user_name" maxlength="50" size="30"></td>
+                </tr>
+
+                <! Row 2 within setup your account>
+                <tr class="setup_your_account_password">
+                    <td valign="top"><label for="password">Password :</label></td>
+
+                    <td valign="top"><input type="password" placeholder="Password" name="password" maxlength="50" size="30"></td>
+                </tr>
+
+                <! Row 3 within setup your account>
+                <tr class="setup_your_account_confirm_password">
+                    <td valign="top"><label for="confirm_password">Confirm Password :</label></td>
+
+                    <td valign="top"><input type="password" placeholder="Confirm Password" name="confirm_password" maxlength="50" size="30"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        
+        
+        
+        
+        <! Fieldset to group player information>
+        <fieldset class="player_information">
+            <legend align="center">Player Information</legend>
+
+            <table align="center">
+                <tr>
+                    <td valign="top"><label for="first_name">First Name :</label></td>
+
+                    <td valign="top"><input type="text" placeholder="First Name" name="first_name" maxlength="50" size="30"></td>
+
+                    <td valign="top"><label for="last_name">Last Name :</label></td>
+
+                    <td valign="top"><input type="text" placeholder="Last Name" name="last_name" maxlength="50" size="30"></td>
+                </tr>
+
+                <tr>
+                    <td valign="top"><label for="date_of_birth">Date of Birth :</label></td>
+
+                    <td valign="top"><input type="text" placeholder="Date of Birth" name="date_of_birth" maxlength="50" size="30"></td>
+
+                    <td valign="top"><label for="email_address">Email Address :</label></td>
+
+                    <td valign="top"><input type="text" placeholder="Email Address" name="email_address" maxlength="50" size="30"></td>
+                </tr>
+
+                <tr>
+                    <td valign="top"><label for="phone">Phone Number :</label></td>
+
+                    <td valign="top"><input type="text" placeholder="Phone Number" name="phone" maxlength="30" size="30"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset class="parent_information">
+            <legend align="center">Parent/Guardian Information</legend>
+
+            <table align="center">
+                <tr>
+                    <td valign="top"><label for="p_first_name">First Name :</label></td>
+
+                    <td valign="top"><input type="text" placeholder="First Name" name="p_first_name" maxlength="50" size="30"></td>
+
+                    <td valign="top"><label for="p_last_name">Last Name :</label></td>
+
+                    <td valign="top"><input type="text" placeholder="Last Name" name="p_last_name" maxlength="50" size="30"></td>
+                </tr>
+
+                <tr>
+                    <td valign="top"><label for="p_home_phone">Home Phone :</label></td>
+
+                    <td valign="top"><input type="text" placeholder="Home Phone" name="p_home_phone" maxlength="50" size="30"></td>
+
+                    <td valign="top"><label for="p_cell_phone">Cell Phone :</label></td>
+
+                    <td valign="top"><input type="text" placeholder="Cell Phone" name="p_cell_phone" maxlength="50" size="30"></td>
+                </tr>
+
+                <tr>
+                    <td valign="top"><label for="p_email_address">Email Address :</label></td>
+
+                    <td valign="top"><input type="text" placeholder="Email Address" name="p_email_address" maxlength="50" size="30"></td>
+                </tr>
+
+                <tr>
+                    <td valign="top"><label for="comments">Comments :</label></td>
+
+                    <td valign="top">
+                    <textarea placeholder="Comments" name="comments" maxlength="1000" cols="25" rows="6">
+</textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset class="emergency_contact_information">
+            <legend align="center">Emergency Contact Information</legend>
+
+            <table align="center">
+                <tr>
+                    <td valign="top"><label for="emergency_first_name">First Name :</label></td>
+
+                    <td valign="top"><input type="text" placeholder="First Name" name="emergency_first_name" maxlength="50" size="30"></td>
+
+                    <td valign="top"><label for="emergency_last_name">Last Name :</label></td>
+
+                    <td valign="top"><input type="text" placeholder="Last Name" name="emergency_last_name" maxlength="50" size="30"></td>
+                </tr>
+
+                <tr>
+                    <td valign="top"><label for="emergency_relationship_to_player">Relationship to Player :</label></td>
+
+                    <td valign="top"><input type="text" placeholder="Relationship to Player " name="emergency_relationship_to_player" maxlength="50" size="30"></td>
+
+                    <td valign="top"><label for="emergency_phone_number">Phone Number :</label></td>
+
+                    <td valign="top"><input type="text" placeholder="Phone Number" name="emergency_phone_number" maxlength="50" size="30"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" style="text-align:center"><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
