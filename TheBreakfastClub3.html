@@ -50,8 +50,10 @@
             <legend align="center">Player Information</legend>
 
             <! Table labeling the table within player information>
-            <table align="center">
-                <tr>
+            <table class="table_player_information" align="center">
+                
+                <! Row 1 within player information>
+                <tr class="player_information_first_name">
                     <td valign="top"><label for="first_name">First Name :</label></td>
 
                     <td valign="top"><input type="text" placeholder="First Name" name="first_name" maxlength="50" size="30"></td>
@@ -61,7 +63,8 @@
                     <td valign="top"><input type="text" placeholder="Last Name" name="last_name" maxlength="50" size="30"></td>
                 </tr>
 
-                <tr>
+                <! Row 2 within player information>
+                <tr class="player_information_date_of_birth">
                     <td valign="top"><label for="date_of_birth">Date of Birth :</label></td>
 
                     <td valign="top"><input type="text" placeholder="Date of Birth" name="date_of_birth" maxlength="50" size="30"></td>
@@ -71,7 +74,8 @@
                     <td valign="top"><input type="text" placeholder="Email Address" name="email_address" maxlength="50" size="30"></td>
                 </tr>
 
-                <tr>
+                <!Row 3 within player information>
+                <tr class="player_information_phone_number">
                     <td valign="top"><label for="phone">Phone Number :</label></td>
 
                     <td valign="top"><input type="text" placeholder="Phone Number" name="phone" maxlength="30" size="30"></td>
@@ -79,11 +83,21 @@
             </table>
         </fieldset>
 
+        
+        
+        
+        
+        <! Fieldset to group parent/guardian information>
         <fieldset class="parent_information">
+            
+            <! Legend to group parent/guardian information>
             <legend align="center">Parent/Guardian Information</legend>
 
-            <table align="center">
-                <tr>
+            <! Table labeling the table within parent/guardian information>
+            <table class="table_parent_information" align="center">
+                
+                
+                <tr class="parent_first_name">
                     <td valign="top"><label for="p_first_name">First Name :</label></td>
 
                     <td valign="top"><input type="text" placeholder="First Name" name="p_first_name" maxlength="50" size="30"></td>
@@ -122,7 +136,7 @@
         <fieldset class="emergency_contact_information">
             <legend align="center">Emergency Contact Information</legend>
 
-            <table align="center">
+            <table class="table_emergency_information" align="center">
                 <tr>
                     <td valign="top"><label for="emergency_first_name">First Name :</label></td>
 
