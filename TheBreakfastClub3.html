@@ -1,11 +1,55 @@
 <html>
+	<script type="text/javascript">
+
+    //function
+    function checkForm(form)
+    {
+      
+      // Username blank check
+    if(form.element_setup_your_account_username_text.value == "") {
+      alert("Error: Username cannot be blank!");
+      form.element_setup_your_account_username_text.focus();
+      return false;
+    }
+
+    //if password 1 doesnt
+    if(form.element_setup_your_account_password_text.value != "" && form.element_setup_your_account_password_text.value == form.element_setup_your_account_confirm_password_text.value) {
+      if(form.element_setup_your_account_password_text.value.length < 6) {
+        alert("Error: Password must contain at least six characters!");
+        form.element_setup_your_account_password_text.focus();
+        return false;
+      }
+      
+      // if username and password match
+      if(form.element_setup_your_account_password_text.value == form.element_setup_your_account_username_text.value) {
+        alert("Error: Password must be different from Username!");
+        form.element_setup_your_account_password_text.focus();
+        return false;
+      }
+      
+      // if both passwords match
+      if(form.element_setup_your_account_password_text.value == form.element_setup_your_account_confirm_password_text.value){
+          alert("You are the man!")
+          return false;
+      }
+    } 
+    
+    // if password blank or passwords dont match
+    else {
+      alert("Error: Both passwords must match!");
+      form.element_setup_your_account_password_text.focus();
+      return false;
+      }
+	}
+
+    </script>
 <body>
 	<! Main header The breakfast Club Registration>
     <h1 align="center">The BreakFast Club Registration</h1>
     <hr>
 
 	<! Form breakfast club registration for page grouping>
-    <form name="breakfast_club_registration" method="post" action="html_form_send.php">
+    <form onsubmit="return checkForm(this);" name="breakfast_club_registration" method="post" action="html_form_send.php">
         
         <! Fieldset to group setup your account>
         <fieldset class="fieldset_setup_your_account">
@@ -68,7 +112,7 @@
                     <td class="element_player_information_date_of_birth_label" valign="top"><label for="element_player_information_date_of_birth_label">Date of Birth :</label></td>
 
                     <td class="element_player_information_date_of_birth_dropdowns">
-                    <select name="DOBMonth">
+                    <select name="date_of_birth_Month">
 	<option>Month</option>
 	<option value="January">January</option>
 	<option value="Febuary">February</option>
@@ -84,7 +128,7 @@
 	<option value="December">December</option>
 </select>
 
-<select name="DOBDay">
+<select name="date_of_birth_day">
 	<option>Day</option>
 	<option value="1">1</option>
 	<option value="2">2</option>
@@ -119,7 +163,7 @@
 	<option value="31">31</option>
 </select>
 
-<select name="DOBYear">
+<select name="date_of_birth_year">
 	<option>Year</option>
 	<option value="2003">2003</option>
 	<option value="2002">2002</option>
