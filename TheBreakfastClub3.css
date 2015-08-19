@@ -103,10 +103,36 @@
 
 
 
-
-
-
 .fieldset_emergency_contact_information{
 	width: 720px;
 	margin:auto;
 }
+
+.legend_emergency_contact_information{
+	font-family: HelveticaNeue-Light;
+	font-size: 120%;
+}
+
+.element_emergency_contact_information_first_name_label{
+	font-family: Courier New;
+}
+
+.element_emergency_contact_information_last_name_label{
+	font-family: Courier New;
+}
+
+.element_emergency_contact_information_relationship_to_player_label{
+	font-family: cursive
+}
+
+.element_emergency_contact_information_phone_number_label{
+	font-family: Courier New;
+}
+
+.element_emergency_contact_information_comments_label{
+	font-family: Courier New;
+}
+
+
+
+
