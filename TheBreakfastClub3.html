@@ -18,7 +18,7 @@
       return false;
     }
 
-    //if password 1 doesnt
+    //if password 1 doesnt equal blank and it's equal to confirm password
     if(form.element_setup_your_account_password_text.value != "" && form.element_setup_your_account_password_text.value == form.element_setup_your_account_confirm_password_text.value) {
       if(form.element_setup_your_account_password_text.value.length < 6) {
         alert("Error: Password must contain at least six characters!");
