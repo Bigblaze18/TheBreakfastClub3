@@ -104,7 +104,7 @@
 
 
 .fieldset_emergency_contact_information{
-	width: 720px;
+	width: 800px;
 	margin:auto;
 }
 
@@ -121,8 +121,8 @@
 	font-family: Courier New;
 }
 
-.element_emergency_contact_information_relationship_to_player_label{
-	font-family: cursive
+.element_emergency_contact_information_relation_to_player_label{
+	font-family: Courier New;
 }
 
 .element_emergency_contact_information_phone_number_label{
