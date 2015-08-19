@@ -4,7 +4,7 @@
 }
 
 .fieldset_setup_your_account{
-	width: 650px;
+	width: 720px;
 	margin:auto;
 }
 
@@ -26,8 +26,33 @@
 }
 
 .fieldset_player_information{
-	width: 650px;
+	width: 720px;
 	margin:auto;
+}
+
+.legend_player_information{
+	font-family: HelveticaNeue-Light;
+	font-size: 120%;
+}
+
+.element_player_information_first_name_label{
+	font-family: Courier New;
+}
+
+.element_player_information_last_name_label{
+	font-family: Courier New;
+}
+
+.element_player_information_date_of_birth_label{
+	font-family: Courier New;
+}
+
+.element_player_information_email_address_label{
+	font-family: Courier New;
+}
+
+.element_player_information_phone_number_label{
+	font-family: Courier New;
 }
 
 
@@ -40,6 +65,24 @@
 
 
 .fieldset_parent_information{
-	width: 650px;
+	width: 720px;
+	margin:auto;
+}
+
+.legend_parent_information{
+	font-family: HelveticaNeue-Light;
+	font-size: 120%;
+}
+
+
+
+
+
+
+
+
+
+.fieldset_emergency_contact_information{
+	width: 720px;
 	margin:auto;
 }
