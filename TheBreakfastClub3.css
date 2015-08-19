@@ -1,137 +1,94 @@
 
-.breakfast_club_registration{
-	
+h1{
+	font-family: cursive;
+	font-size: 50px;
 }
 
-.fieldset_setup_your_account{
-	width: 720px;
-	margin:auto;
-}
 
-.legend_setup_your_account{
-	font-family: HelveticaNeue-Light;
-	font-size: 120%;
-}
 
-.element_setup_your_account_username_label{
-	font-family: Courier New;
-}
-
-.element_setup_your_account_password_label{
-	font-family: Courier New;
-}
-
-.element_setup_your_account_confirm_password_label{
-	font-family: Courier New;
-}
 
 .fieldset_player_information{
-	width: 720px;
+	width: 670px;
 	margin:auto;
 }
 
 .legend_player_information{
 	font-family: HelveticaNeue-Light;
 	font-size: 120%;
+	font-weight: 500;
 }
 
-.element_player_information_first_name_label{
-	font-family: Courier New;
+.table_player_information{
+	font-family: HelveticaNeue-Light;
+	width: 670px;
+	table-layout: fixed;
 }
-
-.element_player_information_last_name_label{
-	font-family: Courier New;
-}
-
-.element_player_information_date_of_birth_label{
-	font-family: Courier New;
-}
-
-.element_player_information_email_address_label{
-	font-family: Courier New;
-}
-
-.element_player_information_phone_number_label{
-	font-family: Courier New;
-}
-
-
-
-
-
 
 
 
 
 
 .fieldset_parent_information{
-	width: 720px;
+	width: 670px;
 	margin:auto;
 }
 
 .legend_parent_information{
 	font-family: HelveticaNeue-Light;
 	font-size: 120%;
+	font-weight: 500;
 }
 
-.element_parent_information_first_name_label{
-	font-family: Courier New;
+.table_parent_information{
+	font-family: HelveticaNeue-Light;
+	width: 670px;
+	table-layout: fixed;
 }
-
-.element_parent_information_last_name_label{
-	font-family: Courier New;
-}
-
-.element_parent_information_home_phone_label{
-	font-family: Courier New;
-}
-
-.element_parent_information_cell_phone_label{
-	font-family: Courier New;
-}
-
-.element_parent_information_email_address_label{
-	font-family: Courier New;
-}
-
-
-
-
-
 
 
 
 
 
 .fieldset_emergency_contact_information{
-	width: 800px;
+	width: 670px;
 	margin:auto;
 }
 
 .legend_emergency_contact_information{
 	font-family: HelveticaNeue-Light;
 	font-size: 120%;
+	font-weight: 500;
 }
 
-.element_emergency_contact_information_first_name_label{
-	font-family: Courier New;
+.table_emergency_contact_information{
+	font-family: HelveticaNeue-Light;
+	width: 670px;
+	table-layout: fixed;
 }
 
-.element_emergency_contact_information_last_name_label{
-	font-family: Courier New;
+
+
+
+
+
+
+.fieldset_setup_your_account{
+	width: 670px;
+	margin:auto;
 }
 
-.element_emergency_contact_information_relation_to_player_label{
-	font-family: Courier New;
+.legend_setup_your_account{
+	font-family: HelveticaNeue-Light;
+	font-size: 120%;
+	font-weight: 500;
 }
 
-.element_emergency_contact_information_phone_number_label{
-	font-family: Courier New;
+.table_setup_your_account{
+	font-family: HelveticaNeue-Light;
+	width: 670px;
+	table-layout: fixed;
 }
 
-.element_emergency_contact_information_comments_label{
-	font-family: Courier New;
-}
 
 
 
