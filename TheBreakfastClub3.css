@@ -3,6 +3,43 @@
 	
 }
 
+.fieldset_setup_your_account{
+	width: 650px;
+	margin:auto;
+}
+
 .legend_setup_your_account{
 	font-family: HelveticaNeue-Light;
+	font-size: 120%;
+}
+
+.element_setup_your_account_username_label{
+	font-family: Courier New;
+}
+
+.element_setup_your_account_password_label{
+	font-family: Courier New;
+}
+
+.element_setup_your_account_confirm_password_label{
+	font-family: Courier New;
+}
+
+.fieldset_player_information{
+	width: 650px;
+	margin:auto;
+}
+
+
+
+
+
+
+
+
+
+
+.fieldset_parent_information{
+	width: 650px;
+	margin:auto;
 }
