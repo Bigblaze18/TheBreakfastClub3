@@ -1,4 +1,10 @@
 <html>
+	
+	<head>
+<link href="TheBreakfastClub3.css" rel="stylesheet">
+</head>
+	
+	<! Start of javascript>
 	<script type="text/javascript">
 
     //function
@@ -12,7 +18,7 @@
       return false;
     }
 
-    //if password 1 doesnt
+    //if password 1 doesnt equal blank and it's equal to confirm password
     if(form.element_setup_your_account_password_text.value != "" && form.element_setup_your_account_password_text.value == form.element_setup_your_account_confirm_password_text.value) {
       if(form.element_setup_your_account_password_text.value.length < 6) {
         alert("Error: Password must contain at least six characters!");
@@ -29,7 +35,7 @@
       
       // if both passwords match
       if(form.element_setup_your_account_password_text.value == form.element_setup_your_account_confirm_password_text.value){
-          alert("You are the man!")
+          alert("You are the man, passwords match!")
           return false;
       }
     } 
@@ -41,8 +47,8 @@
       return false;
       }
 	}
+	</script>
 
-    </script>
 <body>
 	<! Main header The breakfast Club Registration>
     <h1 align="center">The BreakFast Club Registration</h1>
@@ -62,21 +68,21 @@
                 
                 <! Row 1 within setup your account >
                 <tr class="row_setup_your_account_username">
-                    <td class="element_setup_your_account_username_label" valign="top"><label for="element_setup_your_account_username_label">Username :</label></td>
+                    <td class="element_setup_your_account_username_label" valign="top"><label for="element_setup_your_account_username_label">Username:</label></td>
 
                     <td class="element_setup_your_account_username_text" valign="top"><input type="text" placeholder="Username" name="element_setup_your_account_username_text" maxlength="50" size="30"></td>
                 </tr>
 
                 <! Row 2 within setup your account>
                 <tr class="row_setup_your_account_password">
-                    <td class="element_setup_your_account_password_label" valign="top"><label for="element_setup_your_account_password_label">Password :</label></td>
+                    <td class="element_setup_your_account_password_label" valign="top"><label for="element_setup_your_account_password_label">Password:</label></td>
 
                     <td class="element_setup_your_account_password_text" valign="top"><input type="password" placeholder="Password" name="element_setup_your_account_password_text" maxlength="50" size="30"></td>
                 </tr>
 
                 <! Row 3 within setup your account>
                 <tr class="row_setup_your_account_confirm_password">
-                    <td class="element_setup_your_account_confirm_password_label" valign="top"><label for="element_setup_your_account_confirm_password_label">Confirm Password :</label></td>
+                    <td class="element_setup_your_account_confirm_password_label" valign="top"><label for="element_setup_your_account_confirm_password_label">Confirm Password:</label></td>
 
                     <td class="element_setup_your_account_confirm_password_text" valign="top"><input type="password" placeholder="Confirm Password" name="element_setup_your_account_confirm_password_text" maxlength="50" size="30"></td>
                 </tr>
@@ -88,28 +94,28 @@
         
         
         <! Fieldset to group player information>
-        <fieldset class="player_information">
+        <fieldset class="fieldset_player_information">
             
             <! Legend to group player information>
-            <legend align="center">Player Information</legend>
+            <legend class="legend_player_information" align="center">Player Information</legend>
 
             <! Table labeling the table within player information>
             <table class="table_player_information" align="center">
                 
                 <! Row 1 within player information>
                 <tr class="row_player_information_first_name">
-                    <td class="element_player_information_first_name_label" valign="top"><label for="element_player_information_first_name_label">First Name :</label></td>
+                    <td class="element_player_information_first_name_label" valign="top"><label for="element_player_information_first_name_label">First Name:</label></td>
 
                     <td class="element_player_information_first_name_text" valign="top"><input type="text" placeholder="First Name" name="element_player_information_first_name_text" maxlength="50" size="30"></td>
 
-                    <td class="element_player_information_last_name_label" valign="top"><label for="element_player_information_last_name_label">Last Name :</label></td>
+                    <td class="element_player_information_last_name_label" valign="top"><label for="element_player_information_last_name_label">Last Name:</label></td>
 
                     <td class="element_player_information_last_name_text" valign="top"><input type="text" placeholder="Last Name" name="element_player_information_last_name_text" maxlength="50" size="30"></td>
                 </tr>
 
                 <! Row 2 within player information>
                 <tr class="row_player_information_date_of_birth">
-                    <td class="element_player_information_date_of_birth_label" valign="top"><label for="element_player_information_date_of_birth_label">Date of Birth :</label></td>
+                    <td class="element_player_information_date_of_birth_label" valign="top"><label for="element_player_information_date_of_birth_label">Date of Birth:</label></td>
 
                     <td class="element_player_information_date_of_birth_dropdowns">
                     <select name="date_of_birth_Month">
@@ -212,14 +218,14 @@
 </select>
                     </td>
 
-					<td class="element_player_information_email_address_label" valign="top"><label for="element_player_information_email_address_label">Email Address :</label></td>
+					<td class="element_player_information_email_address_label" valign="top"><label for="element_player_information_email_address_label">Email Address:</label></td>
 
                     <td class="element_player_information_email_address_text" valign="top"><input type="text" placeholder="Email Address" name="element_player_information_email_address_text" maxlength="50" size="30"></td>
                 </tr>
 
                 <!Row 3 within player information>
                 <tr class="row_player_information_phone_number">
-                    <td class="element_player_information_phone_number_label" valign="top"><label for="element_player_information_phone_number_label">Phone Number :</label></td>
+                    <td class="element_player_information_phone_number_label" valign="top"><label for="element_player_information_phone_number_label">Phone Number:</label></td>
 
                     <td class="element_player_information_phone_number_text" valign="top"><input type="text" placeholder="Phone Number" name="element_player_information_phone_number_text" maxlength="30" size="30"></td>
                 </tr>
@@ -231,39 +237,39 @@
         
         
         <! Fieldset to group parent/guardian information>
-        <fieldset class="parent_information">
+        <fieldset class="fieldset_parent_information">
             
             <! Legend to group parent/guardian information>
-            <legend align="center">Parent/Guardian Information</legend>
+            <legend class="legend_parent_information" align="center">Parent/Guardian Information</legend>
 
             <! Table labeling the table within parent/guardian information>
             <table class="table_parent_information" align="center">
                 
                 <! Row 1 within parent/guardian information>
                 <tr class="row_parent_first_name">
-                    <td class="element_parent_information_first_name_label" valign="top"><label for="element_parent_information_first_name_label">First Name :</label></td>
+                    <td class="element_parent_information_first_name_label" valign="top"><label for="element_parent_information_first_name_label">First Name:</label></td>
 
                     <td class="element_parent_information_first_name_text" valign="top"><input type="text" placeholder="First Name" name="element_parent_information_first_name_text" maxlength="50" size="30"></td>
 
-                    <td class="element_parent_information_last_name_label" valign="top"><label for="element_parent_information_last_name_label">Last Name :</label></td>
+                    <td class="element_parent_information_last_name_label" valign="top"><label for="element_parent_information_last_name_label">Last Name:</label></td>
 
                     <td class="element_parent_information_last_name_text" valign="top"><input type="text" placeholder="Last Name" name="element_parent_information_last_name_text" maxlength="50" size="30"></td>
                 </tr>
 
                 <! Row 2 within parent/guardian information>
                 <tr class="row_parent_home_phone">
-                    <td class="element_parent_information_home_phone_label" valign="top"><label for="element_parent_information_home_phone_label">Home Phone :</label></td>
+                    <td class="element_parent_information_home_phone_label" valign="top"><label for="element_parent_information_home_phone_label">Home Phone:</label></td>
 
                     <td class="element_parent_information_home_phone_text" valign="top"><input type="text" placeholder="Home Phone" name="element_parent_information_home_phone_text" maxlength="50" size="30"></td>
 
-                    <td class="element_parent_information_cell_phone_label" valign="top"><label for="element_parent_information_cell_phone_label">Cell Phone :</label></td>
+                    <td class="element_parent_information_cell_phone_label" valign="top"><label for="element_parent_information_cell_phone_label">Cell Phone:</label></td>
 
                     <td class="element_parent_information_cell_phone_text" valign="top"><input type="text" placeholder="Cell Phone" name="element_parent_information_cell_phone_text" maxlength="50" size="30"></td>
                 </tr>
 
                 <! Row 3 within parent/guardian information>
                 <tr class="row_parent_email_address">
-                    <td class="element_parent_information_email_address_label" valign="top"><label for="element_parent_information_email_address_label">Email Address :</label></td>
+                    <td class="element_parent_information_email_address_label" valign="top"><label for="element_parent_information_email_address_label">Email Address:</label></td>
 
                     <td class="element_parent_information_email_address_text" valign="top"><input type="text" placeholder="Email Address" name="element_parent_information_email_address_text" maxlength="50" size="30"></td>
                 </tr>
@@ -275,39 +281,39 @@
         
         
         <! Fieldset to group emergency contact information>
-        <fieldset class="emergency_contact_information">
+        <fieldset class="fieldset_emergency_contact_information">
             
             <! Legend to group emergency contact information>
-            <legend align="center">Emergency Contact Information</legend>
+            <legend class="legend_emergency_contact_information" align="center">Emergency Contact Information</legend>
 
             <! Table labeling the table within emergency contact information>
             <table class="table_emergency_information" align="center">
                 
                 <! Row 1 within emergency contact information>
                 <tr class"row_emergency_first_name">
-                    <td class="element_emergency_information_first_name_label" valign="top"><label for="element_emergency_information_first_name_label">First Name :</label></td>
+                    <td class="element_emergency_information_first_name_label" valign="top"><label for="element_emergency_information_first_name_label">First Name:</label></td>
 
                     <td class="element_emergency_information_first_name_text" valign="top"><input type="text" placeholder="First Name" name="element_emergency_information_first_name_text" maxlength="50" size="30"></td>
 
-                    <td class="element_emergency_information_last_name_label" valign="top"><label for="element_emergency_information_last_name_label">Last Name :</label></td>
+                    <td class="element_emergency_information_last_name_label" valign="top"><label for="element_emergency_information_last_name_label">Last Name:</label></td>
 
                     <td class="element_emergency_information_last_name_text" valign="top"><input type="text" placeholder="Last Name" name="element_emergency_information_last_name_text" maxlength="50" size="30"></td>
                 </tr>
 
                 <! Row 2 within emergency contact information>
                 <tr class"row_emergency_relationship_to_player">
-                    <td class"element_emergency_information_relationship_to_player_label" valign="top"><label for="element_emergency_information_relationship_to_player_label">Relationship to Player :</label></td>
+                    <td class"element_emergency_information_relationship_to_player_label" valign="top"><label for="element_emergency_information_relationship_to_player_label">Relationship to Player:</label></td>
 
                     <td class="element_emergency_information_relationship_to_player_text" valign="top"><input type="text" placeholder="Relationship to Player " name="element_emergency_information_relationship_to_player_text" maxlength="50" size="30"></td>
 
-                    <td class="element_emergency_information_phone_number_label" valign="top"><label for="element_emergency_information_phone_number_label">Phone Number :</label></td>
+                    <td class="element_emergency_information_phone_number_label" valign="top"><label for="element_emergency_information_phone_number_label">Phone Number:</label></td>
 
                     <td class="element_emergency_information_phone_number_text" valign="top"><input type="text" placeholder="Phone Number" name="element_emergency_information_phone_number_text" maxlength="50" size="30"></td>
                 </tr>
 
                 <! Row 3 within emergency contact information>
                 <tr class="row_emergency_comments">
-                    <td class="element_emergency_information_comments_label" valign="top"><label for="element_emergency_information_comments_label">Comments :</label></td>
+                    <td class="element_emergency_information_comments_label" valign="top"><label for="element_emergency_information_comments_label">Comments:</label></td>
 
                     <td class="element_emergency_information_comments_text" valign="top"><textarea placeholder="Comments" name="element_emergency_information_comments_text" maxlength="1000" cols="25" rows="6">
 </textarea></td>
